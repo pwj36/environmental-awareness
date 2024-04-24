@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8"/>
+    <script src="loginpage.js"></script>
+
+<!--Style of webpage-->
+<style>
+    /*Style for entire website*/
+        /*Set margin and padding for all elements*/
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+
+    /*Styling the entire body section*/
+        body{
+            background-color: #f3fadc;
+            background-image:url('./environmenthomepage.png');
+            background-size:cover;
+            background-position: center;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+    /*Styling the navigation bar*/
+        .navbar{
+            width:100%;
+            background: #32620e;
+            height: 45px;
+            position:fixed;
+            z-index:2
+        }
+
+        /*Positioning the logo*/
+        .logoimg{
+            position:fixed;
+        }
+
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+
+        ul li{
+            float:right;
+            display:inline;
+            font-size:15px;
+            text-align:center;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            width: 150px;
+            height: 45px;
+        }
+
+        /*To change color of the button when the user hovers over it */
+        ul li a:hover{
+            background-color:#1d3808;
+        }
+
+        ul li ul{
+            background-color: #32620e;
+        }
+
+        ul li ul li{
+            float:none;
+        }
+
+        ul li ul{
+            display: none;
+        }
+
+        ul li:hover ul{
+            display:block;
+        }
+
+        div.container{
+            /*padding-top:200px;
+            padding-bottom:200px;*/
+            transform: translateY(30%);
+            align-items:center;
+            display:flex;
+            justify-content:center;
+            height:100%;
+        }
+
+        div.forms{
+            background-color: #32620e;
+        }
+        div.formlogin{
+            position:relative;
+            justify-content: center;
+            align-items:center;
+            width:500px;
+            height:auto;
+            margin-top:20px;
+            margin-bottom:70px;
+            padding-left:40px;
+            padding-right:40px;
+        }
+
+        div.inputfield{
+            margin-left:10px;
+            margin-right:10px;
+        }
+        div.inputfield input{
+            padding-top:10px;
+            padding-bottom:10px;
+            margin-top:10px;
+            margin-bottom:20px;
+            width:400px;
+        }
+        h1{
+            padding-top:70px;
+            text-align:center;
+            color:#f3fadc;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+       
+    /*To style form*/
+        /*Style form label*/
+        label{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            color:#f3fadc;
+        }
+
+        /*To style the buttons- color, font type and size etc.*/
+        input.button{
+            display: inline-block;
+            color:#1d3808;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            text-align: center;
+            background-color:#f3fadc;
+            border-color:transparent;
+            padding-left:30px;
+            padding-right:30px;
+            margin: 4px 2px;
+        }
+
+        /*To change color of the button when mouse hovers accross it*/
+        input.button:hover{
+            background-color:#1d3808;
+            color:#f3fadc;
+        }
+
+        /*Style paragraph text*/
+        p{
+            text-align:center;
+            color:#f3fadc;
+        }
+</style>
+</head>
+<!--Contents of the page-->
+<body>
+    <!--Navigation bar-->
+    <div class = "navbar">
+        <img src="homepagelogo.png" height=45px class="logoimg">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="aboutUs.php">About Us</a></li>
+            <li><a>Learn More</a>
+                <ul>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a href="awareness.html">Awareness</a></li>
+                    <li><a href="pollution.html">Pollution</a></li>
+                    <li><a href="climateChange.html">Climate Change</a></li>
+                    <li><a href="takingAction.html">Taking Action</a></li>
+                </ul>
+            </li>
+            <li><a href="homepage.html">Home</a></li>
+        </ul>
+    </div> <!--End of navigation bar-->
+
+    <!--Form-->
+    <div class="container">
+        <div class="forms">
+            <h1 class="title">LOGIN</h1>
+            <div class="formlogin">
+                <form name ="loginForm" action="member.html" onsubmit="return validateForm()" method="post">
+                    <!--Email-->
+                    <div class="inputfield">
+                    <label>Email</label>
+                    <input 
+                        type="email" 
+                        id="email"
+                        name="email"
+                        size="30"
+                        placeholder="Email Address" 
+                        required
+                        />
+                    </div>
+
+                    <!--Password-->
+                    <div class="inputfield">
+                        <label>Password</label>
+                        <input 
+                            type="password" 
+                            id="password"
+                            name="password"
+                            size="20"
+                            placeholder="Password" 
+                            required
+                            />
+                    </div>
+                    <div class="inputfield">
+                    <input class="button" type = "submit" value="Login"/>
+                    </div>
+                </form>
+
+                <!--Link to Sign up page-->
+                <p>
+                    Do not have an account? Sign up
+                    <a href="signup.html">here</a>
+                </p>
+            </div>
+        </div>
+    </div><!--End of form-->
+</body>
+</html>

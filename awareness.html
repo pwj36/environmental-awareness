@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Environmental Awareness</title>
+    <meta charset="utf-8"/>
+
+<!--Style of webpage-->
+<style>
+    /*Style for entire website*/
+        /*Set margin and padding for all elements*/
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+
+    /*Styling the entire body section*/
+        body{
+            background-color:#f3fadc;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    /*Styling the navigation bar*/
+        .navbar{
+            width:100%;
+            background: #32620e;
+            height: 45px;
+            position:fixed;
+        }
+
+        /*Positioning the logo*/
+        .logoimg{
+            position:fixed;
+        }
+
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+
+        ul li{
+            float:right;
+            display:inline;
+            font-size:15px;
+            text-align:center;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            width: 150px;
+            height: 45px;
+        }
+
+        /*To change color of the button when the user hovers over it */
+        ul li a:hover{
+            background-color:#1d3808;
+        }
+
+        ul li ul{
+            background-color: #32620e;
+        }
+
+        ul li ul li{
+            float:none;
+        }
+
+        ul li ul{
+            display: none;
+        }
+
+        ul li:hover ul{
+            display:block;
+        }
+    
+    /*Styling the header of the page*/
+        h1{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 60px;
+            color:#32620e;
+            padding-top: 70px;
+            padding-bottom:30px;
+            text-align:center;
+        }
+
+    /*Styling contents division*/
+        div.contents{
+            background-color:#f3fadc;
+            display:flex;
+        }
+
+        
+        .contentsh2{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:#314528;
+            padding-top: 75px;
+            padding-bottom:20px;
+            text-align:left;
+        }
+
+        p.contents{
+            text-align: justify;
+            font-size: 1.1em;
+            padding-right: 30px;
+            padding-top: 10px;
+        }
+
+        
+
+        /*Styling content paragraphs*/
+        .contentpara{
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:black;
+            text-align:justify;
+            padding-left:25%;
+            padding-right:25%;
+            padding-bottom:30px;
+        }
+        
+        /*Styling 'What is Environmental Awareness?' division*/
+            /*Creating a division to position image*/
+            div.image{
+                float:left;
+                padding-left:30px;
+                padding-right:30px;
+                padding-top:75px;
+                text-align:center;
+                width:35%;
+            }
+
+            /*Creating a division to position the text contents*/
+            div.text{
+                float:right;
+                text-align:justify;
+                font-size:20px;
+                width:65%;  
+            }
+        
+        /*Styling 'Why is it Important' division*/
+            /*Creating a division to position image*/
+            div.imagetwo{
+                float:left;
+                padding-left:30px;
+                padding-right:30px;
+                padding-top:75px;
+                text-align:center;
+                width:35%;   
+            }
+
+            /*Creating a division to position the text contents*/
+            div.texttwo{
+                float:right;
+                text-align:justify;
+                font-size:20px;
+                width:65%;
+                padding-bottom:100px;
+            }
+
+    /*Website's Footer Division*/
+        .footerdiv{
+            background-color:#32620e;
+            text-align:center;
+        }
+    
+        .boxesdiv2{
+            display:flex;
+            background-color: #32620e;
+            align-content:center;
+            justify-content:center;
+            padding-top:20px;
+            padding-left:5%;
+            padding-right:5%;
+        }
+
+        .innerbox2{
+            background-color: #32620e;
+            text-align:left;
+            height: 180px;
+            margin:20px;
+            width:370px;
+            padding-left:20px;
+            padding-bottom:10px;
+        }
+
+        h2.alignleft{
+            text-align:left;
+            padding-left:20px;
+            color:white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:25px;
+            padding-bottom:10px;
+        }
+
+        p.footer{
+            padding-left:20px;
+            color:white;
+        }
+</style>
+</head>
+<!--Contents of the page-->
+<body>
+    <!--Navigation bar-->
+    <div class = "navbar">
+        <img src="homepagelogo.png" height=45px class="logoimg">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="aboutUs.php">About Us</a></li>
+            <li><a>Learn More</a>
+                <ul>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a href="awareness.html">Awareness</a></li>
+                    <li><a href="pollution.html">Pollution</a></li>
+                    <li><a href="climateChange.html">Climate Change</a></li>
+                    <li><a href="takingAction.html">Taking Action</a></li>
+                </ul>
+            </li>
+            <li><a href="homepage.html">Home</a></li>
+        </ul>
+    </div> <!--End of navigation bar-->
+
+    <!--Page Header-->
+    <h1 style="background-color:#1d3808; color:#f3fadc">ENVIRONMENTAL AWARENESS</h1>
+
+    <!--Contents Division-->
+    <div class="contents">
+        <!--'What is Environmental Awareness?' Division-->
+            <!--Image-->
+            <div class = image>
+                <img src="Environmental-Awareness.png" width=100%>
+                <br>
+            </div><!--End of image division-->
+
+            <!--Text Contents-->
+            <div class="text">
+                <!--Subheading-->
+                <h2 class="contentsh2">
+                    WHAT IS ENVIRONMENTAL AWARENESS?
+                </h2>
+                <!--Paragraph contents-->
+                <p class = "contents">
+                    Environmental awareness refers to an individual's knowledge about the environment, the influence of human actions on the 
+                    environment, and the importance of environmental protection (The Pachamama Alliance, n.d.). There have been many awareness 
+                    initiatives, such as the 'Go Green' campaign, encouraging people to be sensitive to the natural environment and make 
+                    economically responsible decisions (Sullivan, 2022). For example, a person can go green by purchasing a glass or ceramic 
+                    bottle instead of a disposable plastic bottle.
+                </p>
+            </div><!--End of text contents division-->
+    </div><!--End of contents division-->
+
+    <!--Contents Division 2-->
+    <div class="contents">
+        <!--'Why is it Important?' Division-->
+            <!--Image-->
+            <div class = imagetwo>
+                <img src="trees.png" width=100%>
+                <br>
+            </div><!--End of image division-->
+
+            <!--Text Contents-->
+            <div class="texttwo">
+                <!--Subheading-->
+                <h2 class="contentsh2">
+                    WHY IS IT IMPORTANT?
+                </h2>
+                <p class = "contents">
+                    The world is currently facing enormous environmental challenges. Large amounts of carbon dioxide emissions have caused 
+                    pollution and climate change, which have the potential to alter our environment severely. Hence, widespread behavioural change 
+                    is required to maintain a sustainable environment. Environmental awareness enables individuals to learn about the 
+                    environmental problems and gives them increased exposure to nature. Love The Oceans (2020) mentioned that it is highly 
+                    probable that individuals would care about a topic and make informed judgments when they know more information about it. 
+                    Awareness would make it a simpler procedure to achieve sustainable living because it enables us to understand the importance 
+                    of stopping behaviours that will harm the environment and implementing methods to restore the damage caused by us.
+                </p>
+            </div><!--End of text contents division-->
+    </div><!--End of contents division 2-->
+    
+    <!--The Footer Division-->
+    <div class="footerdiv">
+        <div class="boxesdiv2">
+            <div class="innerbox2">
+                <h2 class="alignleft">CONTACT US</h2>
+                <p class="footer">Phone No.: 012 345 6789</p>
+                <p class="footer">Email: ecogreenco@gmail.com</p>
+                <br>
+                <h2 class="alignleft">REFERENCES</h2>
+                <p class="footer">
+                    Click 
+                    <a href="references.html" style="color:#f3fadc;">here</a>
+                    for the reference list.
+                </p>
+            </div>
+            <div class="innerbox2">
+                <h2 class="alignleft">ADDRESS</h2>
+                <p class="footer">Jalan PJU 2b/12,
+                    <br>
+                    Ara Damansara,
+                    <br>
+                    47301 Petaling Jaya, Selangor
+                </p>
+            </div>
+            <div class="innerbox2">
+                <h2 class="alignleft">OPERATING HOURS</h2>
+                <p class="footer">
+                    Monday-Friday: 10am-5pm
+                    <br>
+                    Saturday: 11am-4pm
+                    <br>
+                    Sunday: 11am-3pm
+                    <br>
+                    Closed on Public Holidays
+                </p>
+            </div>
+        </div>
+        <p style="padding-bottom:10px; color:white; font-size:10px;">Copyright © 2022 Eco Green Co</p>
+    </div><!--End of the footer division-->
+</body>
+</html>

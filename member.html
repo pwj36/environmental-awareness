@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eco Green Co</title>
+    <meta charset="utf-8"/>
+
+<!--Style of webpage-->
+<style>
+    /*Style for entire website*/
+        /*Set margin and padding for all elements*/
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+
+    /*Styling the entire body section*/
+        body{
+            background-color:#f3fadc;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+        div.contents{
+            background-color:#f3fadc;
+            min-width:1100px;
+        }
+
+        h1{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 60px;
+            color:#1d3808;
+            padding-top: 70px;
+            padding-bottom:30px;
+            text-align:center;
+        }
+        
+        h2{
+            text-align:center;
+            padding-top:70px;
+            padding-bottom:25px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:30px;
+        }
+
+        .contentpara{
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:black;
+            text-align:justify;
+            padding-left:15%;
+            padding-right:15%;
+            padding-bottom:10px;
+        }
+
+        /*Styling the table*/
+            table.center{
+                margin-left:auto;
+                margin-right:auto;
+                font-size:20px;
+                padding-left:30px;
+            }
+
+            .center td{
+                padding-bottom:5px;
+                padding-left:10px;
+                padding-right:10px;
+                text-align:center;
+            }
+
+            table{
+                width:1100px;
+                height:50px;
+            }
+
+            table, td {
+                border: 1px solid;
+                border-collapse:collapse;
+            }
+
+        /*To display the buttons horizontally*/
+            .roundbutton{
+                display: inline-block;
+                padding-left:47%;
+            }
+
+        /*To style the buttons- color, font type and size etc.*/
+        a button{
+            color:#1d3808;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            text-align: center;
+            background-color:#b1d8b7;
+            border-color:black;
+            border-radius: 999px;
+            padding: 10px 20px;
+            margin: 4px 2px;
+            margin-top: 20px;
+        }
+</style>
+</head>
+<!--Contents of the page-->
+<body>
+
+    <div class="contents">
+        <h2>Welcome, you have successfully logged in!</h2>
+        
+        <!--Table-->
+        <table class="center">
+            <caption style="padding-bottom:10px; font-weight:bold;">Your Contributions</caption>
+            <tr>
+                <td style="background-color:#b1d8b7; font-weight:bold;">Event ID</td>
+                <td colspan="3" style="background-color:#b1d8b7; font-weight:bold;">Event Description</td>
+                <td style="background-color:#b1d8b7; font-weight:bold;">Event Date</td>
+                <td style="background-color:#b1d8b7; font-weight:bold;">Attendance</td>
+            </tr>
+            <tr>
+                <td colspan="6"><br>You have not partcipated in any clean-up events yet.<br>
+                    Contact our headquarters to register in one today!<br><br></td>
+        </table><!--End of table-->
+
+        <!--Logout button-->
+        <a href="logout.html" class="roundbutton">
+            <button type = "button">Log Out</button>
+        </a>
+    </div>
+
+</body>
+</html>

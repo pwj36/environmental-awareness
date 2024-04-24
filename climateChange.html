@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Climate Change</title>
+    <meta charset="utf-8"/>
+
+<!--Style of webpage-->
+<style>
+    /*Style for entire website*/
+        /*Set margin and padding for all elements*/
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+
+    /*Styling the entire body section*/
+        body{
+            background-color:#f3fadc;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    /*Styling the navigation bar*/
+        .navbar{
+            width:100%;
+            background: #32620e;
+            height: 45px;
+            position:fixed;
+        }
+
+        /*Positioning the logo*/
+        .logoimg{
+            position:fixed;
+        }
+
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+
+        ul li{
+            float:right;
+            display:inline;
+            font-size:15px;
+            text-align:center;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            width: 150px;
+            height: 45px;
+        }
+
+        /*To change color of the button when the user hovers over it */
+        ul li a:hover{
+            background-color:#1d3808;
+        }
+
+        ul li ul{
+            background-color: #32620e;
+        }
+
+        ul li ul li{
+            float:none;
+        }
+
+        ul li ul{
+            display: none;
+        }
+
+        ul li:hover ul{
+            display:block;
+        }
+    
+    /*Header of the page*/
+        h1{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 60px;
+            color:#1d3808;
+            padding-top: 70px;
+            padding-bottom:30px;
+            text-align:center;
+        }
+
+    /*Subheader of the page*/
+        h2{
+            text-align:center;
+            padding-top:20px;
+            padding-bottom:25px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:30px;
+        }
+    
+    /*Styling paragraph*/
+        .contentpara{
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:black;
+            text-align:justify;
+            padding-left:15%;
+            padding-right:15%;
+            padding-bottom:10px;
+        }
+    
+    /*Styling contents division*/
+        .contents{
+            background-color:#f3fadc;
+        }
+
+        /*Styling the table*/
+            table.center{
+                margin-left:auto;
+                margin-right:auto;
+                font-size:20px;
+            }
+
+            .center td{
+                padding-bottom:5px;
+                padding-left:10px;
+                padding-right:10px;
+                text-align:center;
+            }
+
+            table{
+                width:400px;
+                height:300px;
+            }
+
+            table, td {
+                border: 1px solid;
+                border-collapse:collapse;
+            }
+       
+        
+        /*Causes of climate change division*/
+            /*Position image to the left*/
+            div.leftimg{
+                padding-top:0px;
+                width:405px;
+                height:210px;
+                padding-left:75px;
+                float:left;
+                padding-right:30px;
+                text-align: center;
+            }
+            p.causes{
+                text-align: justify;
+                font-size: 1.1em;
+                padding-right: 75px;
+                padding-top: 10px;
+                padding-bottom: 75px;
+                padding-left: 75px;
+            }
+
+        /*Effects of climate change division*/
+            /*Creating boxes for each effects*/
+            .boxesdiv{
+                display:flex;
+                background-color:#f3fadc;
+                align-content:center;
+                justify-content:center;
+                padding-bottom:30px;
+                margin-left:30px;
+                margin-right:30px;
+                padding-left:5%;
+                padding-right:5%;
+            }
+
+            /*Styling the boxes*/
+            .innerbox{
+                background-color: #b1d8b7;
+                align-items:center;
+                margin:20px;
+                width:350px;
+                height:370px;
+                text-align:center;
+                color:black;
+            }
+
+            /*Styling and positioning images*/
+            .effectsimg{
+                display: block;
+                padding-bottom:10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /*Styling sub-sub-heading*/
+            h3.effects{
+                font-size:20px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color:black;
+                padding-top:10px;
+                padding-bottom:10px;
+                text-align:center;
+            }
+
+            /*Styling paragraph contents*/
+            p.effects{
+                color:black; 
+                padding-top:5px; 
+                padding-left:10%; 
+                padding-right: 10%; 
+                padding-bottom:10px; 
+                text-align:center;
+            }
+
+    /*Website's Footer Division*/
+        .footerdiv{
+            background-color:#32620e;
+            text-align:center;
+        }
+    
+        .boxesdiv2{
+            display:flex;
+            background-color: #32620e;
+            align-content:center;
+            justify-content:center;
+            padding-top:20px;
+            padding-left:5%;
+            padding-right:5%;
+        }
+
+        .innerbox2{
+            background-color: #32620e;
+            text-align:left;
+            height: 180px;
+            margin:20px;
+            width:370px;
+            padding-left:20px;
+            padding-bottom:10px;
+        }
+
+        h2.alignleft{
+            text-align:left;
+            padding-left:20px;
+            color:white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:25px;
+            padding-top:0px;
+            padding-bottom:10px;
+        }
+
+        p.footer{
+            padding-left:20px;
+            color:white;
+        }
+</style>
+</head>
+<!--Contents of the page-->
+<body>
+    <!--Navigation bar-->
+    <div class = "navbar">
+        <img src="homepagelogo.png" height=45px class="logoimg">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="aboutUs.php">About Us</a></li>
+            <li><a>Learn More</a>
+                <ul>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a href="awareness.html">Awareness</a></li>
+                    <li><a href="pollution.html">Pollution</a></li>
+                    <li><a href="climateChange.html">Climate Change</a></li>
+                    <li><a href="takingAction.html">Taking Action</a></li>
+                </ul>
+            </li>
+            <li><a href="homepage.html">Home</a></li>
+        </ul>
+    </div> <!--End of navigation bar-->
+
+    <!--Header of the page-->
+    <h1 style="background-color:#1d3808; color:#f3fadc;">CLIMATE CHANGE</h1>
+
+    <!--What is Climate Change section-->
+    <div class="contents" style="padding-top:20px;">
+        <!--Subheading of the page-->
+        <h2>
+            WHAT IS CLIMATE CHANGE?
+        </h2>
+
+         <!--Video of what Climate Change is-->
+         <iframe style="margin-left:auto; margin-right:auto; display:block; padding-bottom:20px;"width="700" height="400" 
+         src="https://www.youtube.com/embed/dcBXmj1nMTQ" title="What is Climate Change? | Start Here" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+         <!--Desciption of what climate change is-->
+         <p class="contentpara">
+            Climate change is the shift in temperature and weather patterns for a protracted period (United Nations, n.d.). Some changes occur 
+            naturally, such as oscillations in the solar cycles. However, humans have become the primary cause of climate change ever since the 
+            1800s. Human activities such as the combustion of fossil fuels generate greenhouse gas which traps heat from the sun, raising the 
+            atmosphere's temperatures.
+            <br>
+            <br>
+            The breakdown of greenhouse gases emitted into the atmosphere are as shown in the table below (Intergovernmental Panel on 
+            Climate Change, 2014):
+            <br>
+            <br>
+        </p>
+
+        <!--Breakdown of greenhouse gas emissions-->
+        <table class="center">
+            <caption style="padding-bottom:10px; font-weight:bold;">Greenhouse Gases Emissions</caption>
+            <tr>
+                <td style="background-color:#b1d8b7; font-weight:bold;">Greenhouse Gases</td>
+                <td style="background-color:#b1d8b7; font-weight:bold;">Percentage (%)</td>
+            </tr>
+            <tr>
+                <td>Carbon dioxide</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td>Methane</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Nitrous Oxide</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Fluorinated gases</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td style="background-color:#b1d8b7">Total</td>
+                <td style="background-color:#b1d8b7">100</td>
+            </tr>
+        </table> <!--End of table-->
+        <p class="contentpara" style="padding-top:30px; padding-bottom:30px;">
+            Among the significant greenhouse gas emitters are electricity, manufacturing companies, automobiles, farmlands and buildings 
+            (United Nations, n.d.). These emissions are not decreasing but instead increasing. The world is presently 1.1 degrees Celsius warmer 
+            than it was in 1800.
+            <br>
+            <br>
+            Climate change has caused severe droughts, water scarcity, wildfires, increased sea levels, flash floods, melting polar ice, 
+            catastrophic storms, and dwindling biodiversity. The process of climate change is currently causing severe droughts, water shortages, 
+            wildfires, increased sea levels, flash floods, melting ice caps and declining biodiversity.
+        </p>
+    </div><!--End of 'What is Climate Change' section-->
+    <hr>
+    <!--'Causes of Climate Change' section-->
+    <h2 style="padding-bottom:40px; padding-top:30px;">CAUSES OF CLIMATE CHANGE</h2>
+            <!--Cause 1: Generating Power-->
+            <div class = leftimg>
+                <img src="generatingPower.png" width="300" height="200px">
+                <br>
+            </div>
+            <h3>
+                Generating Power
+            </h3>
+            <p class = "causes">
+                Urbanization means more fossil fuels are needed to generate power for the population. The use of fossil fuels to generate power and heat contributes 
+                significantly to global emissions. The majority of energy is produced by burning coal, oil, or gas, emitting greenhouse gases that trap the sun's heat.
+            </p>
+            <br><br><br>
+
+             <!--Cause 2: Manufacturing Goods-->
+            <div class = leftimg>
+                <img src="manufacturingGoods.png" width="300">
+                <br>
+            </div>
+            <h3>
+                Manufacturing Goods
+            </h3>
+            <p class = "causes">
+                The manufacturing industry is classified as a significant contributor to global greenhouse gas emissions. Manufacturing companies generate vast amounts of emissions, mainly from the combustion of coal, oil or gas, to provide fuel for the production of cement, metal, electronics and other items. Apart from that, mining and industrial operations also emit gases. These procedures can result in vast amounts of greenhouse gases being emitted.
+            </p>
+            <br><br><br>
+
+            <!--Cause 3: Deforestation-->
+            <div class = leftimg>
+                <img src="deforestation2.png" width="300">
+                <br>
+            </div>
+            <h3>
+                Deforestation
+            </h3>
+            <p class = "causes">
+                Deforestation occurs when a large number of trees are chopped down. When trees are chopped down, they release all their accumulated carbon. According to research, over 12 million acres of forests are destroyed annually. Forest trees also assist in absorbing carbon dioxide. Hence, without them, carbon dioxide absorption would also decrease. 
+            </p>
+            <br><br><br>
+
+            <!--Cause 4: Automobiles-->
+            <div class = leftimg>
+                <img src="automobileEmission.png" width="300">
+                <br>
+            </div>
+            <h3>
+                Automobiles
+            </h3>
+            <p class = "causes">
+                According to studies, automobiles are responsible for almost one-quarter of worldwide power-related carbon dioxide emissions. Researchers suggest that this figure will continue to rise in the following years. Automobiles, including vars, lorries, and trucks, operate on fossil fuels and thus are significant generators of greenhouse gases, particularly carbon dioxide emissions. 
+            </p>
+            <br><br><br>
+        <hr><!--End of 'Causes of Climate Change'-->
+
+        <!--'Effects of Climate Change' section-->
+        <h2>EFFECTS OF CLIMATE CHANGE</h2>
+        <p style="margin-left:auto; margin-right:auto; text-align:center; font-size:1.1em">Several effects of land pollution include (United Nations, n.d.; Mimura, 2013): </p>
+            <!--First row of effects-->
+            <div class="boxesdiv">
+                <!--Effects 1: Rise in Temperatures-->
+                <div class="innerbox">
+                    <h3 class="effects">Rise in Temperatures</h3>
+                    <img src="risingTemp.png" width=90% height=60% class="effectsimg">
+                    <p class="effects">Rise in atmospheric and ocean temperatures</p>
+                </div>
+                
+                <!--Effects 2: Rising Sea Levels-->
+                <div class="innerbox">
+                    <h3 class="effects">Rising Sea Levels</h3>
+                    <img src="risingSeaLvl.png" width=90% height=60% class="effectsimg">
+                    <p class="effects">Rise in sea levels due to thermal expansion and melting of ice.</p>
+                </div>
+
+                <!--Effects 3: Food Shortages-->
+                <div class="innerbox">
+                    <h3 class="effects">Food Shortages</h3>
+                    <img src="foodShortage.png" width=90% height=60% class="effectsimg">
+                    <p class="effects">Food shortages due to extreme weather conditions</p>
+                </div>
+            </div><!--End of first row of effects-->
+
+            <!--Second row of Effects-->
+            <div class="boxesdiv">
+                <!--Effects 4: Unpredictable Weather Patterns-->
+                <div class="innerbox">
+                    <h3 class="effects">Unpredictable Weather Patterns</h3>
+                    <img src="unpredictableWeather.png" width=90% height=60% class="effectsimg">
+                    <p class="effects">Unpredictable weather patterns that can increase drought and flash floods</p>
+                </div>
+
+                <!--Effects 5: Health Risks-->
+                <div class="innerbox">
+                    <h3 class="effects">Health Risks</h3>
+                    <img src="healthRisk.png" width=90% height=60% class="effectsimg">
+                    <p class="effects">Health risks from extreme weather conditions, diseases from pollution, etc.</p>
+                </div>
+
+                <!--Effects 6: Survival Risks of Animals-->
+                <div class="innerbox">
+                    <h3 class="effects">Survival Risks of Animals</h3>
+                    <img src="survivalRisk.png" width=90% height=60% class="effectsimg">
+                    <p class="effects">Survival risks due to adverse climate changes</p>
+                </div>
+            </div><!--End of second row of effects-->
+
+    <!--The Footer Division-->
+    <div class="footerdiv">
+        <div class="boxesdiv2">
+            <div class="innerbox2">
+                <h2 class="alignleft">CONTACT US</h2>
+                <p class="footer">Phone No.: 012 345 6789</p>
+                <p class="footer">Email: ecogreenco@gmail.com</p>
+                <br>
+                <h2 class="alignleft">REFERENCES</h2>
+                <p class="footer">
+                    Click 
+                    <a href="references.html" style="color:#f3fadc;">here</a>
+                    for the reference list.
+                </p>
+            </div>
+            <div class="innerbox2">
+                <h2 class="alignleft">ADDRESS</h2>
+                <p class="footer">Jalan PJU 2b/12,
+                    <br>
+                    Ara Damansara,
+                    <br>
+                    47301 Petaling Jaya, Selangor
+                </p>
+            </div>
+            <div class="innerbox2">
+                <h2 class="alignleft">OPERATING HOURS</h2>
+                <p class="footer">
+                    Monday-Friday: 10am - 5pm
+                    <br>
+                    Saturday: 11am-4pm
+                    <br>
+                    Sunday: 11am-3pm
+                    <br>
+                    Closed on Public Holidays
+                </p>
+            </div>
+        </div>
+        <p style="padding-bottom:10px; color:white; font-size:10px;">Copyright © 2022 Eco Green Co</p>
+    </div><!--End of footer division-->
+</body>
+</html>

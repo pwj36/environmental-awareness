@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Taking Action</title>
+    <meta charset="utf-8"/>
+
+<!--Style of webpage-->
+<style>
+    /*Style for entire website*/
+        /*Set margin and padding for all elements*/
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+
+    /*Styling the entire body section*/
+        body{
+            background-color:#f3fadc;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    /*Styling the navigation bar*/
+        .navbar{
+            width:100%;
+            background: #32620e;
+            height: 45px;
+            position:fixed;
+        }
+
+        /*Positioning the logo*/
+        .logoimg{
+            position:fixed;
+        }
+
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+
+        ul li{
+            float:right;
+            display:inline;
+            font-size:15px;
+            text-align:center;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            width: 150px;
+            height: 45px;
+        }
+
+        /*To change color of the button when the user hovers over it */
+        ul li a:hover{
+            background-color:#1d3808;
+        }
+
+        ul li ul{
+            background-color: #32620e;
+        }
+
+        ul li ul li{
+            float:none;
+        }
+
+        ul li ul{
+            display: none;
+        }
+
+        ul li:hover ul{
+            display:block;
+        }
+
+    /*Styling Page Header*/
+        h1{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:#314528;
+            padding-top: 70px;
+            padding-bottom:30px;
+            text-align:center;
+        }    
+
+    /*Styling the subheading*/
+        h2{
+            text-align:center;
+            padding-top:20px;
+            padding-bottom:25px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:30px;
+            color:#314528;
+        }
+
+    /*'How can we save the environment?' division*/
+        .contents{
+            background-color:#f3fadc;
+            padding-bottom:40px;
+        }
+    
+    /*'3Rs Method'Division*/
+        div.contents2{
+            background-color:#f3fadc;
+            display:flex;
+        }
+
+        /*Positioning the image*/
+        div.image{
+            float:left;
+            padding-left:30px;
+            padding-right:30px;
+            padding-top:20px;
+            text-align:center;
+            width:35%;
+        }
+
+        /*Positioning content text*/
+        div.text{
+            float:right;
+            text-align:justify;
+            font-size:20px;
+            width:65%;
+        }
+
+        /*Styling ordered list*/
+        ol{
+            padding-left:50px;
+            padding-right:70px;
+        }
+
+        /*Styling the paragraph*/
+        p.threeRs{
+            text-align: justify;
+            font-size: 20px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+
+    /*'Other Methods' division*/
+        .boxesdiv{
+            display:flex;
+            background-color: #f3fadc;
+            align-content:center;
+            justify-content:center;
+            padding-bottom:30px;
+            margin-left:30px;
+            margin-right:30px;
+            padding-left:5%;
+            padding-right:5%;
+        }
+
+        .innerbox{
+            background-color: #b1d8b7;
+            align-items:center;
+            margin:20px;
+            width:350px;
+            height:360px;
+            text-align:center;
+            color:black;
+        }
+
+        .methodsimg{
+            display: block;
+            padding-bottom:0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h3.methods{
+            font-size:20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:black;
+            padding-top:10px;
+            padding-bottom:10px;
+            text-align:center;
+        }
+
+        p.methods{
+            color:black; 
+            padding-top:5px; 
+            padding-left:10%; 
+            padding-right: 10%; 
+            padding-bottom:10px; 
+            text-align:center;
+        }
+
+/*Website's Footer Division*/
+        .footerdiv{
+            background-color:#32620e;
+            text-align:center;
+        }
+    
+        .boxesdiv2{
+            display:flex;
+            background-color: #32620e;
+            align-content:center;
+            justify-content:center;
+            padding-top:20px;
+            padding-left:5%;
+            padding-right:5%;
+        }
+
+        .innerbox2{
+            background-color: #32620e;
+            text-align:left;
+            height: 180px;
+            margin:20px;
+            width:370px;
+            padding-left:20px;
+            padding-bottom:10px;
+        }
+
+        h2.alignleft{
+            text-align:left;
+            padding-left:20px;
+            color:white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:25px;
+            padding-top:0px;
+            padding-bottom:10px;
+        }
+
+        p.footer{
+            padding-left:20px;
+            color:white;
+        }
+</style>
+</head>
+<!--Contents of the page-->
+<body>
+    <!--Navigation bar-->
+    <div class = "navbar">
+        <img src="homepagelogo.png" height=45px class="logoimg">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="aboutUs.php">About Us</a></li>
+            <li><a>Learn More</a>
+                <ul>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a href="awareness.html">Awareness</a></li>
+                    <li><a href="pollution.html">Pollution</a></li>
+                    <li><a href="climateChange.html">Climate Change</a></li>
+                    <li><a href="takingAction.html">Taking Action</a></li>
+                </ul>
+            </li>
+            <li><a href="homepage.html">Home</a></li>
+        </ul>
+    </div> <!--End of navigation bar-->
+
+    <!--Header of the page-->
+    <h1 style="background-color:#1d3808; color:#f3fadc; font-size:55px;">TAKING ACTION</h1>
+
+    <!--'How can we save the environment' section-->
+    <div class="contents">
+        <h1>
+            HOW CAN WE SAVE THE ENVIRONMENT?
+        </h1>
+
+        <!--Video of what Climate Change is-->
+        <iframe style="margin-left:auto; margin-right:auto; display:block; padding-bottom:5px;"width="700" height="400"  
+        src="https://www.youtube.com/embed/gUhxcdzRgLQ" title="What Can You Do RIGHT NOW To Save The Earth?" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><!--End of 'How can we save the environment' section-->
+
+    <hr>
+
+    <!--'3Rs Method' section-->
+    <h1 style="padding-top:20px;">
+        3Rs METHOD
+    </h1>
+    <div class="contents2" style="padding-bottom:20px;">
+        <div class = image>
+            <img src="threeRs.png" width=100%>
+            <br>
+        </div>
+        <div class="text">
+            <p class ="threeRs">
+                One of the main methods you can save the environment is by following the 3Rs- reduce, reuse and recycle (Rinkesh, n.d.): 
+                <br>
+                <br>
+                <ol type="a">
+                    <li><strong>Reduce</strong>: reduce the amount of waste generated. For example, reduce usage of disposable plates, utensils and napkins. 
+                        Instead, use washable plates and utensils and handkerchiefs.
+                    </li>
+                    <br>
+                    <li><strong>Reuse</strong>: Repurpose items to use for another intended purpose. For example, old jeans and clothes can be 
+                        reused as bags.
+                    </li>
+                    <br>
+                    <li><strong>Recycle</strong>: To convert waste materials into usable ones. For example, using plastic bottles as a pot to plant 
+                        trees.
+                    </li>
+                  </ol> 
+            </p>
+        </div>
+    </div>
+    <!--End of '3Rs Method' section-->
+
+    <hr>
+    
+    <!--'Other Methods' section-->
+    <h2>OTHER METHODS</h2>
+            <!--First row of methods-->
+            <div class="boxesdiv">
+                <!--Method 1: Use Recycle Bags-->
+                <div class="innerbox">
+                    <h3 class="methods">Use Recycle Bags</h3>
+                    <img src="recycleBag.png" width=80% height=60% class="methodsimg">
+                    <p class="methods">Reduce use of plastic bags as it take very long to decompose.</p>
+                </div>
+                
+                <!--Method 2: Use Reusable Bottles-->
+                <div class="innerbox">
+                    <h3 class="methods">Use Reusable Bottles</h3>
+                    <img src="reusableBottles.png" width=80% height=60% class="methodsimg">
+                    <p class="methods">Use reusable water bottles instead of plastic bottles.</p>
+                </div>
+
+                <!--Method 3: Volunteer-->
+                <div class="innerbox">
+                    <h3 class="methods">Volunteer</h3>
+                    <img src="cleanupEvent.png" width=80% height=60% class="methodsimg">
+                    <p class="methods">Volunteer in your community for clean-up events.</p>
+                </div>
+            </div><!--End of first row of methods-->
+
+            <!--Second row of Methods-->
+            <div class="boxesdiv">
+                <!--Method 4: Spread Awareness-->
+                <div class="innerbox">
+                    <h3 class="methods">Spread Awareness</h3>
+                    <img src="raiseAwareness.png" width=80% height=60% class="methodsimg">
+                    <p class="methods">Spread awareness and encourage others to take action in protecting the environment.</p>
+                </div>
+
+                <!--Method 5: Ride a Bike or Walk-->
+                <div class="innerbox">
+                    <h3 class="methods">Ride a Bike or Walk</h3>
+                    <img src="rideWalk.png" width=80% height=60% class="simg">
+                    <p class="methods">Reduce the usage of automobiles as it can lead to greenhouse gas emissions.</p>
+                </div>
+
+                <!--Method 6: Use Renewable Energy-->
+                <div class="innerbox">
+                    <h3 class="methods">Use Renewable Energy</h3>
+                    <img src="renewableEnergy.png" width=80% height=60% class="methodsimg">
+                    <p class="methods">Although costly, it doesn't generate greenhouse gases while producing energy and power.
+                    </p>
+                </div>
+            </div><!--End of second row of methods-->
+
+    <!--The Footer Division-->
+    <div class="footerdiv">
+        <div class="boxesdiv2">
+            <div class="innerbox2">
+                <h2 class="alignleft">CONTACT US</h2>
+                <p class="footer">Phone No.: 012 345 6789</p>
+                <p class="footer">Email: ecogreenco@gmail.com</p>
+                <br>
+                <h2 class="alignleft">REFERENCES</h2>
+                <p class="footer">
+                    Click 
+                    <a href="references.html" style="color:#f3fadc;">here</a>
+                    for the reference list.
+                </p>
+            </div>
+            <div class="innerbox2">
+                <h2 class="alignleft">ADDRESS</h2>
+                <p class="footer">Jalan PJU 2b/12,
+                    <br>
+                    Ara Damansara,
+                    <br>
+                    47301 Petaling Jaya, Selangor
+                </p>
+            </div>
+            <div class="innerbox2">
+                <h2 class="alignleft">OPERATING HOURS</h2>
+                <p class="footer">
+                    Monday-Friday: 10am - 5pm
+                    <br>
+                    Saturday: 11am-4pm
+                    <br>
+                    Sunday: 11am-3pm
+                    <br>
+                    Closed on Public Holidays
+                </p>
+            </div>
+        </div>
+        <p style="padding-bottom:10px; color:white; font-size:10px;">Copyright © 2022 Eco Green Co</p>
+    </div><!--End of footer division-->
+</body>
+</html>

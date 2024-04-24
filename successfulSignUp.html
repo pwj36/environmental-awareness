@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eco Green Co</title>
+    <meta charset="utf-8"/>
+
+<!--Style of webpage-->
+<style>
+    /*Set margin and padding for all elements*/
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    }
+
+    /*Styling the entire body section*/
+    body{
+        background-color:#f3fadc;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /*Positions the contents of the homepage*/
+    .contents{
+        position:absolute;
+        text-align:center;
+        width:100%;
+        top:60%;
+        bottom:0%;
+        transform: translateY(-70%);
+    }
+
+    h2{
+            text-align:center;
+            padding-top:70px;
+            padding-bottom:5px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:30px;
+        }
+
+    /*Position and style the paragraph*/
+    p{
+        font-size: 1em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:black;
+    }
+
+    .buttondiv{
+        padding-top:0%;
+    }
+    /*To display the buttons horizontally*/
+    .roundbutton{
+        display: inline-block;
+    }
+
+    /*To style the buttons- color, font type and size etc.*/
+    a button{
+        color:#1d3808;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        background-color:#b1d8b7;
+        border-color:black;
+        border-radius: 999px;
+        padding: 10px 20px;
+        margin: 4px 2px;
+        margin-top: 20px;
+    }
+
+    img{
+        position:fixed;
+    }
+</style>
+</head>
+<!--Contents of the page-->
+<body>
+    <!--Navigation bar-->
+    
+    <div class="contents">
+        <!--Header of the page-->
+        <h2>You have successfully signed up!</h2>
+            <!--Buttons to direct users back to login page-->
+            <div class="buttondiv">
+                <a href="login.html" class="roundbutton">
+                <button type = "button">Return to Login page</button>
+                </a>
+            </div>
+    </div>
+</body>
+</html>

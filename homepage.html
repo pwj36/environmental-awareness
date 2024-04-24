@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eco Green Co</title>
+    <meta charset="utf-8"/>
+
+<!--Style of webpage-->
+<style>
+    /*Set margin and padding for all elements*/
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    }
+
+    /*Styling the entire body section*/
+    body{
+        background-image:url('./environmenthomepage.png');
+        background-color:#f3fadc;
+        background-size:cover;
+        background-position: center;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar{
+        width:100%;
+        background: #32620e;
+        height: 45px;
+    }
+
+    ul{
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+
+    ul li{
+        float:right;
+        display:inline;
+        font-size:15px;
+        text-align:center;
+    }
+
+    ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+        width: 150px;
+        height: 45px;
+    }
+
+    ul li a:hover{
+        background-color:#1d3808;
+    }
+
+    ul li ul{
+        background-color: #32620e;
+    }
+
+    ul li ul li{
+        float:none;
+    }
+
+    ul li ul{
+        display: none;
+    }
+
+    ul li:hover ul{
+        display:block;
+    }
+
+    /*Positions the contents of the homepage*/
+    .contents{
+        position:absolute;
+        text-align:center;
+        width:100%;
+        top:60%;
+        bottom:0%;
+        transform: translateY(-50%);
+    }
+
+    /*Position and style the header (SAVE OUR ENVIRONMENT)*/
+    h1{
+        font-family:Impact,fantasy;
+        font-size: 90px;
+        color:#32620e;
+    }
+
+    /*Position and style the paragraph*/
+    p{
+        font-size: 1em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:black;
+    }
+
+    .buttondiv{
+        padding-top:0%;
+    }
+    /*To display the buttons horizontally*/
+    .roundbutton{
+        display: inline-block;
+    }
+
+    /*To style the buttons- color, font type and size etc.*/
+    a button{
+        color:#f3fadc;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        background-color:#32620e;
+        border-color:transparent;
+        border-radius: 999px;
+        padding: 10px 20px;
+        margin: 4px 2px;
+        margin-top: 20px;
+    }
+
+    img{
+        position:fixed;
+    }
+</style>
+</head>
+<!--Contents of the page-->
+<body>
+    <!--Navigation bar-->
+    <div class = "navbar">
+        <img src="homepagelogo.png" height=45px class="logoimg">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="aboutUs.php">About Us</a></li>
+            <li><a>Learn More</a>
+                <ul>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a href="awareness.html">Awareness</a></li>
+                    <li><a href="pollution.html">Pollution</a></li>
+                    <li><a href="climateChange.html">Climate Change</a></li>
+                    <li><a href="takingAction.html">Taking Action</a></li>
+                </ul>
+            </li>
+            <li><a href="homepage.html">Home</a></li>
+        </ul>
+    </div> <!--End of navigation bar-->
+    
+    <div class="contents">
+        <!--Header of the page-->
+        <h1>
+            SAVE THE ENVIRONMENT
+        </h1>
+        <!--Provide guidelines for the end user-->
+        <p>
+            Eco Green Co is a company that strives to promote eco-friendly habits. 
+        </p>
+        <p>
+            Join us as we take responsibility for rescuing the environment on the planet we live.
+        </p>
+            <!--Buttons to direct users to the other pages-->
+            <div class="buttondiv">
+                <a href="environment.html" class="roundbutton">
+                <button type = "button">Learn More</button>
+                </a>
+            </div>
+    </div>
+</body>
+</html>
